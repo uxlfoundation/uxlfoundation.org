@@ -1,0 +1,1 @@
+$().ready(function(){$(".home-testimonials-slider-new").slick({slidesToShow:1,slidesToScroll:1,autoplaySpeed:2e3,arrows:!0,dots:!0,focusOnSelect:!1,infinite:!0,responsive:[{breakpoint:1320,settings:{arrows:!1}},{breakpoint:1024,settings:{arrows:!1}}]})});
