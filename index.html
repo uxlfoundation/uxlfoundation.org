@@ -1,0 +1,1422 @@
+
+<html lang="en">
+<head>
+<title>UXL Foundation: Unified Acceleration</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    img-src 'self' data: https://*.hubapi.com https://*.hsforms.com https://oneapi.io;
+    script-src 'self' https://ajax.googleapis.com https://js.hsforms.net
+        'sha256-Bed9qzUU2IVkAAxp73fh88GAnMchALEvifOr4XcPQ/4='
+        'sha256-bEEkf4zYbua70dH+/sbVfyxE5MpQwnn9KDqR4J+2ITM='
+        'sha256-UTBrrWPkMLHm8oGvy29VQf0SDRwWBQuW0bWQVS/IDh4='
+        'sha256-kYiluFOAvpeVpYPkek9sTay+6T+xc906LZZZIJcldHE=';
+    connect-src 'self' https://*.hubapi.com https://*.hsforms.com;
+    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="stylesheet" id="oneapitheme-fonts-css" href="https://fonts.googleapis.com/css?family=Lato%3A300%2C300italic%2C400%2C400italic%2C500%2C700%2C700italic%2C900&amp;subset=latin%2Clatin-ext&amp;ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="/css/flexboxgrid.min.css" type="text/css">
+<link rel="stylesheet" href="/css/slick.css" type="text/css">
+<link rel="stylesheet" href="/css/slick-theme.css" type="text/css">
+<link rel="stylesheet" href="/css/news-slick-theme.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="/js/vendor/slick.min.js"></script>
+<script src="/js/app.js"></script>
+</head>
+<body>
+<div class="jdfbanner" data-generator="jdfbanner">
+<div class="container">
+<a href="https://jointdevelopment.org/" rel="noopener noreferrer" target="_blank">
+<img alt="Joint Development foundation Project" src="/images/jdfp-banner.svg" class="inline">
+</a>
+</div>
+</div>
+<main>
+<div class="entry-content">
+<section class="max-w-full bg-gradient-to-b from-[#888C9B28] to-white relative" data-generator="uxl-hero-section">
+<div class="absolute inset-0 w-full h-full bg-cover bg-no-repeat" style="background-image: url('/images/oneapi-bg-texture.svg');"></div>
+<div class="tw-container py-12 relative">
+<div class="lg:max-w-[850px] mt-16 lg:text-left text-center">
+<div class="lg:flex items-center justify-start lg:mb-0 mb-6">
+<img src="/images/uxl-logo-med.png" alt="UXL" height="100" width="348" class="grow flex-auto h-auto w-full max-w-[348px] max-h-[100px] lg:mr-5 lg:mx-0 lg:mb-0 mb-6 block mx-auto">
+<h1 class="text-[51px] font-light leading-tight ligatures-none">Unified Acceleration Foundation</h1>
+</div>
+<h2 class="text-2xl font-bold mb-4">Join us to drive an open standard accelerator software ecosystem!</h2>
+<div class="text-lg max-w-[650px]">
+<ul>
+<li>Build a multi-architecture multi-vendor software ecosystem for all accelerators.</li>
+<li>Unify the heterogeneous compute ecosystem around open standards.</li>
+<li>Build on and expand <a href="https://oneapi.io/open-source/" target="_blank" rel="noopener">open-source projects</a> for accelerated computing.</li>
+</ul>
+<p><strong>For all enquiries, please reach out to <a href="mailto:info@uxlfoundation.org">info@uxlfoundation.org</a></strong></p>
+</div>
+<div class="flex items-center lg:justify-start justify-center gap-x-4 gap-y-2 mt-8">
+<a href="https://uxlfoundation.org/membership" target="_blank" class="text-[12px] font-bold uppercase tracking-widest bg-vibrant-orange hover:bg-white text-white visited:text-white focused:text-white hover:text-vibrant-orange rounded-full h-10 inline-flex items-center justify-start px-4 shadow shadow-[#00000029] no-underline">
+Join
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+<a href="https://github.com/uxlfoundation/foundation" target="_blank" class="text-[12px] font-bold uppercase tracking-widest border border-vibrant-orange hover:bg-vibrant-orange hover:vibrant-orange text-vibrant-orange hover:text-white rounded-full h-10 inline-flex items-center justify-start px-4 shadow shadow-[#00000029] no-underline">
+Participate
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+<a href="#newsletter" class="text-[12px] font-bold uppercase tracking-widest border border-vibrant-orange hover:bg-vibrant-orange hover:vibrant-orange text-vibrant-orange hover:text-white rounded-full h-10 inline-flex items-center justify-start px-4 shadow shadow-[#00000029] no-underline">
+Newsletter
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+<img src="/images/wp-sync/uxl-header-uncrop.png" alt="" class="lg:absolute xl:max-h-[408px] xl:w-auto h-full xl:mt-8 xl:right-[-24%] lg:max-h-[300px] lg:top-1/2 lg:right-[-17%] lg:-translate-y-1/2 lg:origin-bottom lg:mt-20 lg:block hidden">
+</div>
+</div>
+</section>
+<section class="max-w-full bg-white" data-generator="uxl-news">
+<div class="tw-container py-12">
+<div class="w-100 px-0 border border-[#d8d8d8] rounded-lg flex justify-between items-stretch gap-4 min-h-[250px] overflow-hidden lg:flex-nowrap flex-wrap z-10 relative bg-white shadow">
+<div class="lg:min-w-[40%] lg:w-[40%] lg:pt-[15px] lg:pl-[15px]">
+<img src="/images/wp-sync/devSummit-hosted-by-UXL-Foundation-SEPT25.png" alt="oneAPI Developer Summit 2025, HOSTED BY UXL FOUNDATION I SEPTEMBER 17, 2025. Advancing Al and HPC with oneAPI: Data Center to the Edge." class="w-full h-auto lg:rounded-[6px]">
+</div>
+<div class="p-6">
+<h2 class="text-2xl font-bold mb-4">oneAPI Developer Summit 2025 (hosted by UXL Foundation)</h2>
+<div class="text-lg">
+<div><b>September 17, 2025</b></div>
+<p><b>Time:</b> 7 AM &#8211; 12:30 PM PDT<br>
+<b>Location:</b> Virtual</p>
+<p>Join us for an in-depth showcase of oneAPI specification along with open-source projects that implement oneAPI specification. oneAPI is designed to enable developers to use a single code base across multiple accelerators and architectures, supporting artificial intelligence, high performance computing, edge computing, automotive, and more.</p>
+<p>Hosted by the UXL Foundation, this community-led conference brings together developers to explore, share, and showcase the capabilities of oneAPI through hands-on tutorials, demos, technical talks, and panel discussions.</p>
+</div>
+<div class="flex flex-wrap md:flex-nowrap items-center lg:justify-start justify-center gap-x-4 gap-y-2 mt-4">
+<a href="https://oneapi.io/events/oneapi-devsummit-hosted-by-uxl-foundation-2025/#agenda" target="_blank" class="text-[12px] font-bold uppercase tracking-widest border border-vibrant-orange hover:bg-vibrant-orange hover:vibrant-orange text-vibrant-orange hover:text-white rounded-full h-10 inline-flex items-center justify-start px-4 shadow shadow-[#00000029] no-underline">
+See Agenda
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+<a href="https://www.youtube.com/playlist?list=PL1y7wPjc4JtEfgZg1Z4h04Vxck7c6S8tQ" target="_blank" class="text-[12px] font-bold uppercase tracking-widest bg-vibrant-orange hover:bg-white text-white visited:text-white focused:text-white hover:text-vibrant-orange rounded-full h-10 inline-flex items-center justify-start px-4 shadow shadow-[#00000029] no-underline">
+Watch Replay
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-full bg-white" data-generator="uxl-news">
+<div class="tw-container py-12">
+<div class="w-full flex flex-wrap md:flex-nowrap justify-between mb-10 gap-x-1 gap-y-4 items-center">
+<h2 class="lg:text-[44px] font-bold text-3xl text-left text-neutral-800">UXL News</h2>
+<div>
+<a href="https://www.oneapi.io/blog/" target="_blank" class="text-[12px] font-bold uppercase tracking-widest border border-vibrant-orange hover:bg-vibrant-orange hover:vibrant-orange text-vibrant-orange hover:text-white rounded-full h-10 inline-flex items-center justify-start px-4 shadow shadow-[#00000029] no-underline">
+See All Posts<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+<div class="mt-4">
+<div class="uxl-news-slider h-80">
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Hosting the UXL Foundation Mini Summit at OSS Denver</h4>
+</div>
+<div>
+<a href="https://oneapi.io/blog/hosting-the-uxl-foundation-mini-summit-at-oss-denver/" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Intel oneDNN 3.9 Making More Preparations For Xe3, Nova Lake &#038; Diamond Rapids</h4>
+</div>
+<div>
+<a href="https://www.phoronix.com/news/Intel-oneDNN-3.9-RC" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Open Standards and representing the UXL Foundation at ISC25</h4>
+</div>
+<div>
+<a href="https://oneapi.io/blog/open-standards-and-representing-the-uxl-foundation-at-isc25/" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Optimized Math Operators for Arm contributed to oneMath</h4>
+</div>
+<div>
+<a href="https://oneapi.io/blog/optimized-math-operators-for-arm-contributed-to-onemath/" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">A Decade of Heterogeneous C++ Compute Acceleration with SYCL</h4>
+</div>
+<div>
+<a href="https://www.khronos.org/blog/a-decade-of-heterogeneous-c-compute-acceleration-with-sycl" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Intel oneDNN 3.8 Brings More CPU &#038; GPU Performance Optimizations</h4>
+</div>
+<div>
+<a href="https://www.phoronix.com/news/Intel-oneDNN-3.8" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Accelerate Quantitative Finance with SYCL* and oneMKL</h4>
+</div>
+<div>
+<a href="https://www.intel.com/content/www/us/en/developer/articles/technical/accel-quantitative-finance-with-sycl-and-onemkl.html" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Portable Data Parallel Extensions for Python* Language: Accelerate Computations Using GPUs</h4>
+</div>
+<div>
+<a href="https://oneapi.io/blog/portable-data-parallel-extensions-for-python-language-accelerate-computations-using-gpus/" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Deeper Learning with oneDNN 3.7: Latest Neural Network Library Release</h4>
+</div>
+<div>
+<a href="https://oneapi.io/blog/deeper-learning-with-onednn-3-7-latest-neural-network-library-release/" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Notes</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">oneDNN v3.7 is now available! The release includes performance optimizations for x64 CPUs, Intel GPUs, AArch64 CPUs, and exte...</h4>
+</div>
+<div>
+<a href="https://github.com/oneapi-src/oneDNN/releases/tag/v3.7" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Notes <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Intel oneDNN 3.7 Begins Tuning For Xe3 Graphics, Adds More Granite Rapids Optimizations</h4>
+</div>
+<div>
+<a href="https://www.phoronix.com/news/Intel-oneDNN-3.7" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">How Intel Uses PyTorch to Empower Generative AI through Intel Arc GPUs</h4>
+</div>
+<div>
+<a href="https://pytorch.org/blog/how-intel-uses-pytorch-to-empower-generative-ai-through-intel-arc-gpus/" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Developer Story: How We Ported oneDAL on Arm for Accelerated AI Workloads for FUJITSU-MONAKA</h4>
+</div>
+<div>
+<a href="https://blog.fltech.dev/entry/2024/10/25/onedal-arm-ai-oss-framework-acceleration-fujitsu-monaka-en" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">United Acceleration (UXL) Foundation 2024 Annual Report</h4>
+</div>
+<div>
+<a href="https://oneapi.io/wp-content/uploads/2024/12/UXL-Foundation-Annual-Report-2024.pdf" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">At SC24: Intel, oneAPI and the UXL Foundation — Enabling Open Source Software for HPC-AI</h4>
+</div>
+<div>
+<a href="https://insidehpc.com/2024/12/at-sc24-intel-oneapi-and-the-uxl-foundation-enabling-open-source-software-for-hpc-ai/" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Intel oneCCL 2021.14 Brings New Performance &#038; Scalability Optimizations</h4>
+</div>
+<div>
+<a href="https://www.phoronix.com/news/Intel-oneCCL-2021.14" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">Intel oneDNN 3.6 Improves Performance For Granite Rapids, Initial Xe2 Optimizations</h4>
+</div>
+<div>
+<a href="https://www.phoronix.com/news/Intel-oneDNN-3.6" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">The Autoware Foundation and The UXL Foundation Collaborate on Achieving Software Portability for Open Source Autonomous Drivi...</h4>
+</div>
+<div>
+<a href="https://autoware.org/the-autoware-foundation-and-the-uxl-foundation-collaborate-on-achieving-software-portability-for-open-source-autonomous-driving-stack/" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">How open source is shaping AI developments</h4>
+</div>
+<div>
+<a href="https://www.computerweekly.com/news/366606012/How-open-source-is-shaping-AI-developments" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="uxl-news-slide group rounded-[10px] bg-white shadow-card px-6 pt-4 pb-6 min-h-64">
+<div class="flex flex-col justify-between h-full">
+<div>
+<div class="w-full text-[#888C9B] flex items-center mb-8">
+<span class="mr-2 inline-block"><svg class="h-[18px] w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentcolor" d="M552 64H112c-20.9 0-38.6 13.4-45.2 32H24c-13.3 0-24 10.7-24 24v272c0 30.9 25.1 56 56 56h496c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM48 392V144h16v248c0 4.4-3.6 8-8 8s-8-3.6-8-8zm480 8H111.4c.4-2.6 .6-5.3 .6-8V112h416v288zM172 280h136c6.6 0 12-5.4 12-12v-96c0-6.6-5.4-12-12-12H172c-6.6 0-12 5.4-12 12v96c0 6.6 5.4 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H172c-6.6 0-12-5.4-12-12zm192 0v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0-144v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12zm0 72v-24c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v24c0 6.6-5.4 12-12 12H364c-6.6 0-12-5.4-12-12z"/></svg></span><span class="text-[12px] uppercase tracking-wider font-bold inline-block">Article</span>
+</div>
+<h4 class="text-base lg:text-xl font-bold mb-4">oneAPI Construction Kit 4.0 Brings RISC-V Host CPU Support</h4>
+</div>
+<div>
+<a href="https://www.phoronix.com/news/oneAPI-Construction-Kit-4.0" target="_blank" class="text-[12px] font-bold uppercase tracking-widest text-vibrant-orange inline-flex items-center justify-start no-underline">
+Read Now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="ml-2 size-4"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+<path fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-full bg-white">
+<div class="transform rotate-180 -mb-[1px] w-[101vw] overflow-hidden">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40.699">
+<path id="wavesNegative" d="M257.208,32.966C352,25.805,451.464,11.711,547.392,5.933,646.1-.028,749.064.319,847.932,6.067c69.408,4.032,136.8,10.681,206.4,14.39,129.332,6.815,262.709,3.357,385.668-10v31.85H0V33.987C81.372,41.935,173.148,39.319,257.208,32.966Z" transform="translate(1440 42.306) rotate(180)" fill="#220473"></path>
+</svg>
+</div>
+<div class="max-w-full bg-gradient-to-b from-[#220473] to-[#4308E5]">
+<div class="tw-container pt-12 pb-12">
+<h2 class="lg:text-[44px] font-bold text-3xl text-center mt-12 mb-10 text-white">Steering Members</h2>
+<div class="flex gap-4 flex-wrap justify-center">
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.arm.com/" target="_blank">
+<img src="/images/wp-sync/Arm_logo_blue_150MD.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.broadcom.com/" target="_blank">
+<img src="/images/wp-sync/Broadcom_Logo_Black_no-tag.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://global.fujitsu/en-global" target="_blank">
+<img src="/images/wp-sync/fujitsu.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.gehealthcare.com/" target="_blank">
+<img src="/images/wp-sync/GE_HealthCare_logo.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://cloud.google.com/" target="_blank">
+<img src="/images/wp-sync/google-cloud.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.imaginationtech.com/" target="_blank">
+<img src="/images/wp-sync/Imagination_Logo_hori_Blk.png" alt="Imagination Tech" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.intel.com/" target="_blank">
+<img src="/images/wp-sync/intel.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.qualcomm.com/" target="_blank">
+<img src="/images/wp-sync/qualcomm.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.samsung.com/us/" target="_blank">
+<img src="/images/wp-sync/samsung.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl group">
+<a href="https://uxlfoundation.org/membership" target="_blank" class="rounded-xl w-full p-4 border-2 self-stretch flex items-center justify-center border-[#707070] border-dashed bg-[#F4F4F4] uppercase lg:text-lg tracking-wider font-bold leading-relaxed !text-[#888C9B] hover:!text-vibrant-orange relative z-10 no-underline">
+Add your organization
+<div class="bg-vibrant-orange absolute rounded-full size-12 right-0 transform translate-x-3/4 z-20 shadow-lg flex items-center justify-center group-hover:bg-white">
+<div class="w-[20px] h-[4px] bg-white absolute group-hover:bg-vibrant-orange"></div>
+<div class="h-[20px] w-[4px] bg-white absolute group-hover:bg-vibrant-orange"></div>
+</div>
+</a>
+</article>
+</div>
+</div>
+<div class="tw-container pb-12">
+<h2 class="lg:text-[44px] font-bold text-3xl text-center mt-12 mb-10 text-white">General Members</h2>
+<div class="flex gap-4 flex-wrap justify-center">
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.cdac.in/" target="_blank">
+<img src="/images/wp-sync/CDAC.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.micron.com/" target="_blank">
+<img src="/images/wp-sync/Micron-1.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.skhynix.com/" target="_blank">
+<img src="/images/wp-sync/SKHynix_logo.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.marvell.com/" target="_blank">
+<img src="/images/wp-sync/marvell-semiconductors-ltd_page-0001-scaled.jpg" alt="Marvell semiconductor UXL foundation" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+</div>
+</div>
+<div class="tw-container pb-12">
+<h2 class="lg:text-[44px] font-bold text-3xl text-center mt-12 mb-10 text-white">Contributing Members</h2>
+<div class="flex gap-4 flex-wrap justify-center">
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://akhetonics.com/" target="_blank">
+<img src="/images/wp-sync/akhetonics-1.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://axelera.ai/" target="_blank">
+<img src="/images/wp-sync/axelera_ai-1.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.canspirit.ai/" target="_blank">
+<img src="/images/wp-sync/canspirit_artificial_intelligence-1.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.cloudsai.co.nz/" target="_blank">
+<img src="/images/wp-sync/CloudsAI.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://codasip.com/" target="_blank">
+<img src="/images/wp-sync/codasip_sro.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://codereckons.com/" target="_blank">
+<img src="/images/wp-sync/codeReckons.jpg" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.denso.com/global/en/" target="_blank">
+<img src="/images/wp-sync/Denso_logo_-_squared.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.dudaji.com/" target="_blank">
+<img src="/images/wp-sync/dudaji-inc.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.embecosm.com/" target="_blank">
+<img src="/images/wp-sync/embecosm.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://fixstars.com/" target="_blank">
+<img src="/images/wp-sync/fixstars-logo.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://flapmax.com/" target="_blank">
+<img src="/images/wp-sync/flapmax-logo-white-rwd.png.rendition.intel_.web_.256.192.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://gi4all.com/" target="_blank">
+<img src="/images/wp-sync/gmac_intelligence.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.haderak.com/" target="_blank">
+<img src="/images/wp-sync/haderak-llc-logo.jpg" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://inspiresemi.com/" target="_blank">
+<img src="/images/wp-sync/Inspire-Semiconductor.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<img src="/images/wp-sync/intellias.jpg" alt="" class="max-w-full max-h-[80px] w-auto">
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://market-potential.com/" target="_blank">
+<img src="/images/wp-sync/market_Potential.jpg" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://mbrdna.com/" target="_blank">
+<img src="/images/wp-sync/Mercedes-orig_img_90008mb_rdna_2c_all_black.jpg" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.multicortex.ai/" target="_blank">
+<img src="/images/wp-sync/multicortex-logo-scaled.jpg" alt="Multicortex" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://onefact.org/" target="_blank">
+<img src="/images/wp-sync/one_fact_foundation.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.renesas.com/en" target="_blank">
+<img src="/images/wp-sync/renesas-electronics-corporation.jpg" alt="Renesas" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://sipearl.com/" target="_blank">
+<img src="/images/wp-sync/sipearl-scaled.jpg" alt="SiPearl" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.thundersoft.com/" target="_blank">
+<img src="/images/wp-sync/ThunderSoftware.jpg" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.tsavoritesi.com/" target="_blank">
+<img src="/images/wp-sync/tsavorite-scalable-intelligence-inc.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://web.unisa.it/en/university" target="_blank">
+<img src="/images/wp-sync/Salerno_University.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://untether.ai/" target="_blank">
+<img src="/images/wp-sync/untether_ai.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.wipro.com/" target="_blank">
+<img src="/images/wp-sync/Wipro.jpg" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.x-silicon.com/" target="_blank">
+<img src="/images/wp-sync/x-silicon.jpg" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.xalnia.com/" target="_blank">
+<img src="/images/wp-sync/Xalnia.jpg" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.xdxct.com/" target="_blank">
+<img src="/images/wp-sync/xiangdixian-logo.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+</div>
+</div>
+<div class="tw-container pb-12">
+<h2 class="lg:text-[44px] font-bold text-3xl text-center mt-12 mb-10 text-white">Affiliate Partners</h2>
+<div class="flex gap-4 flex-wrap justify-center">
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://autoware.org/" target="_blank">
+<img src="/images/wp-sync/Autoware-Main-Logo-whiteBG.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+<article class="flex-grow-0 flex-auto xl:w-[calc(20%-1rem)] lg:w-[calc(25%-1rem)] md:w-[calc(33.34%-1rem)] sm:w-[calc(50%-1rem)] w-full sm:max-w-none max-w-[80%] shadow-md flex items-center justify-center text-center min-h-[135px] rounded-xl bg-white p-5">
+<a href="https://www.khronos.org/members/liaisons" target="_blank">
+<img src="/images/wp-sync/Khronos_100px_June18.png" alt="" class="max-w-full max-h-[80px] w-auto">
+</a>
+</article>
+</div>
+</div>
+<div class="tw-container pb-12">
+<h2 class="lg:text-[44px] font-bold text-3xl text-center mb-10 text-white">Steering Committee Members</h2>
+<div class="flex gap-10 flex-wrap justify-center relative committeev2">
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/Andrew-Wafaa.png" alt="" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Andrew Wafaa
+</p>
+<p class="font-lg mb-2 mt-0">
+Senior Director Software Communities &amp; Fellow
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/Arm_logo_blue_150MD.png" alt="" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/megan-knight-proc.png" alt="Megan Knight" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Megan Knight
+</p>
+<p class="font-lg mb-2 mt-0">
+Director of Software Communities, Arm
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/Arm_logo_blue_150MD.png" alt="" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/Ramesh-Radhakrishnan.png" alt="" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Ramesh Radhakrishnan
+</p>
+<p class="font-lg mb-2 mt-0">
+Technical Director , OCTO HPC/ML
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/Broadcom_Logo_Black_no-tag.png" alt="" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div data-memberi="3" class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<div class="bg-white w-[45px] h-[30px] border-2 border-[#888C9B] group-hover:border-vibrant-orange rounded-md absolute bottom-4 right-3">
+<span class="text-[#888C9B] group-hover:text-vibrant-orange font-bold select-none text-3xl leading-[0] top-3 relative" style="font-family: Helvetica,sans-serif">&ldquo;&rdquo;</span>
+<div class="bg-white border-r-2 border-b-2 border-[#888C9B] group-hover:border-vibrant-orange w-3 h-3 transform rotate-45 absolute -bottom-[7px] right-2"></div>
+</div>
+<img src="/images/wp-sync/Rod-Burns-1.png" alt="" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Rod Burns
+</p>
+<p class="font-lg mb-2 mt-0">
+VP of Ecosystem
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/codeplay-lg.png" alt="" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="member-overlay member-overlay-3 hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 h-full w-full justify-center items-center">
+<div class="overlay-target bg-white h-full rounded-lg shadow-card xl:p-12 py-8 px-6 xl:max-h-[600px] max-h-[60vh] max-w-[600px] relative">
+<div class="close-icon absolute top-3 right-3 size-4 rotate-45 cursor-pointer p2">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+<path d="M232 72c0-13.3-10.7-24-24-24s-24 10.7-24 24V232H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H184V440c0 13.3 10.7 24 24 24s24-10.7 24-24V280H392c13.3 0 24-10.7 24-24s-10.7-24-24-24H232V72z"/>
+</svg>
+</div>
+<div class="overflow-y-auto max-h-full h-fit w-full">
+<div>
+<p class="lg:text-lg font-bold">“The foundation members aspire to build the largest open ecosystem for accelerated computing. The initial contributions to the foundation will bring an existing open standards based platform with open governance. Our ultimate aim is to foster a multi-architecture and multi-vendor programming platform for all accelerators”</p>
+<p class="mt-2 lg:text-lg"><i>Rod Burns, VP of Ecosystem</i></p>
+</div>
+</div>
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/Masahiro-Doteguchi.png" alt="" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Masahiro Doteguchi
+</p>
+<p class="font-lg mb-2 mt-0">
+Senior Engineering Manager
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/fujitsu-1.png" alt="Fujitsu" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/Dr.-Priyanka-Sharma.png" alt="" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Dr. Priyanka Sharma
+</p>
+<p class="font-lg mb-2 mt-0">
+Director of Software Engineering
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/fujitsu-1.png" alt="Fujitsu" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/evgeny-proc.png" alt="Evgeny Drapkin" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Evgeny Drapkin
+</p>
+<p class="font-lg mb-2 mt-0">
+Chief Engineer - Compute at GE HealthCare
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/GEHealthcare.jpg" alt="" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/Penporn-Koanantakool.png" alt="" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Penporn Koanantakool
+</p>
+<p class="font-lg mb-2 mt-0">
+Senior Software Engineer
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/google-cloud.png" alt="" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/Dave-Murray.png" alt="" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Dave Murray
+</p>
+<p class="font-lg mb-2 mt-0">
+AI Software Product Management
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/imagination-small-white.png" alt="Imagination Tech" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/john-melonakos-oneapi.png" alt="John Melonakos" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+John Melonakos
+</p>
+<p class="font-lg mb-2 mt-0">
+AI Libraries Architect
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/logo-white-3000px.png" alt="Intel" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div data-memberi="10" class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<div class="bg-white w-[45px] h-[30px] border-2 border-[#888C9B] group-hover:border-vibrant-orange rounded-md absolute bottom-4 right-3">
+<span class="text-[#888C9B] group-hover:text-vibrant-orange font-bold select-none text-3xl leading-[0] top-3 relative" style="font-family: Helvetica,sans-serif">&ldquo;&rdquo;</span>
+<div class="bg-white border-r-2 border-b-2 border-[#888C9B] group-hover:border-vibrant-orange w-3 h-3 transform rotate-45 absolute -bottom-[7px] right-2"></div>
+</div>
+<img src="/images/wp-sync/Dr.-Vinesh-Sukumar.png" alt="" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Dr. Vinesh Sukumar
+</p>
+<p class="font-lg mb-2 mt-0">
+Head of AI/ML Product Management
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/qualcomm-cropped.png" alt="Qualcomm" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="member-overlay member-overlay-10 hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 h-full w-full justify-center items-center">
+<div class="overlay-target bg-white h-full rounded-lg shadow-card xl:p-12 py-8 px-6 xl:max-h-[600px] max-h-[60vh] max-w-[600px] relative">
+<div class="close-icon absolute top-3 right-3 size-4 rotate-45 cursor-pointer p2">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+<path d="M232 72c0-13.3-10.7-24-24-24s-24 10.7-24 24V232H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H184V440c0 13.3 10.7 24 24 24s24-10.7 24-24V280H392c13.3 0 24-10.7 24-24s-10.7-24-24-24H232V72z"/>
+</svg>
+</div>
+<div class="overflow-y-auto max-h-full h-fit w-full">
+<div>
+<p class="lg:text-lg font-bold">“As a new independent entity, the Unified Acceleration Foundation will help build an open source programming model across a wide range of architectures and vendors,” said Vinesh Sukumar, Senior Director of Product Management, Qualcomm Technologies, Inc. “This helps to address a critical need in the industry for flexible and open source alternatives that will enable a broad range of unique needs.”</p>
+<p class="mt-2 lg:text-lg"><i>Dr. Vinesh Sukumar, Head of AI/ML Product Management </i></p>
+</div>
+</div>
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/manuj-proc.png" alt="Manuj Sabharwal" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Manuj Sabharwal
+</p>
+<p class="font-lg mb-2 mt-0">
+Director of Product Management, AI Software, Qualcomm
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/qualcomm-cropped.png" alt="Qualcomm" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+<div class="committee-member-v2 flex-grow-0 flex-auto md:w-[200px] w-[calc(50%-1.25rem)] sm:max-w-none max-w-[80%] text-white text-center">
+<div class="click-target group shadow-md border border-[#F4F4F4] rounded-[10px] aspect-square md:max-h-[200px] w-full overflow-hidden relative hover:cursor-pointer">
+<img src="/images/wp-sync/Hanwoong-Jung.png" alt="" class="w-full h-full object-center object-cover">
+</div>
+<p class="font-bold text-[20px] mb-2 mt-3">
+Hanwoong Jung
+</p>
+<p class="font-lg mb-2 mt-0">
+Project Leader of Universal Deep Learning Compiler (UDLC)
+</p>
+<div class="h-10 text-center">
+<img src="/images/wp-sync/samsung-cropped.png" alt="Samsung" class="h-full w-auto object-contain object-center block mx-auto p-2">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="-mt-[1px] w-[101vw] overflow-hidden">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40.699">
+<path id="wavesNegative" d="M257.208,32.966C352,25.805,451.464,11.711,547.392,5.933,646.1-.028,749.064.319,847.932,6.067c69.408,4.032,136.8,10.681,206.4,14.39,129.332,6.815,262.709,3.357,385.668-10v31.85H0V33.987C81.372,41.935,173.148,39.319,257.208,32.966Z" transform="translate(1440 42.306) rotate(180)" fill="#4308E5"></path>
+</svg>
+</div>
+</section>
+<script>
+var modalOpen = false;
+    jQuery(document).ready(function () {
+        jQuery('.committeev2 .committee-member-v2 .click-target').click(function () {
+            var i = jQuery(this).attr('data-memberi');
+            if (!modalOpen && i !== undefined) {
+                jQuery('.committee-member-v2').css('opacity', '0.5');
+                modalOpen = true;
+                jQuery('.committeev2 .member-overlay.member-overlay-' + i).css("display", "flex").hide().fadeIn();
+
+                if (window.innerWidth < 768) {
+                    jQuery([document.documentElement, document.body]).animate({
+                        scrollTop: jQuery('.committeev2 .member-overlay.member-overlay-' + i + ' .overlay-target').offset().top - 200
+                    }, 1000);
+                }
+
+            }
+        });
+
+        jQuery('.committeev2 .close-icon').click(function () {
+            if (modalOpen) {
+                jQuery('.committeev2 .member-overlay').fadeOut();
+                jQuery('.committee-member-v2').css('opacity', '1');
+                modalOpen = false;
+            }
+        });
+    });
+</script>
+<section class="max-w-full bg-white" data-generator="uxl-spec-items">
+<div class="tw-container py-12">
+<h2 class="lg:text-[44px] font-bold text-3xl text-left mb-5 text-neutral-800">oneAPI Specification Elements and Open Source Projects</h2>
+<div class="mb-6 text-lg"><p><strong>The Spec is made of 6 core elements.</strong> Engage with oneAPI <a href="https://oneapi.io/open-source/">Open Source Projects</a>.</p>
+</div>
+<div class="sm:flex gap-x-8 gap-y-14 flex-wrap justify-center">
+<div class="md:flex-shrink-0 md:w-[calc(33.34%-1.34rem)] sm:w-[calc(50%-1rem)] sm:my-0 my-10">
+<div class="w-fit mb-6">
+<a class="w-full justify-center flex mb-3 p-0" href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/elements/onedpl/source/">
+<img src="/images/wp-sync/spec-square-oneDPL.png" alt="" class="size-14 block">
+</a>
+<h4 class="lg:text-2xl text-xl font-bold text-left text-neutral-800">
+<a href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/elements/onedpl/source/" class="underline text-vibrant-orange">
+oneDPL
+</a>
+</h4>
+</div>
+<hr class="w-full bg-[#BEBABA]">
+<div class="mt-6">
+<p class="text-lg text-[#888C9B] mb-2">
+<strong>oneAPI</strong> Data Parallel C++ Library
+</p>
+<p class="text-lg text-neutral-800">
+A companion to the DPC++ Compiler for programming oneAPI devices with APIs from C++ standard library, Parallel STL, and extensions.
+</p>
+</div>
+</div>
+<div class="md:flex-shrink-0 md:w-[calc(33.34%-1.34rem)] sm:w-[calc(50%-1rem)] sm:my-0 my-10">
+<div class="w-fit mb-6">
+<a class="w-full justify-center flex mb-3 p-0" href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/elements/onednn/source/">
+<img src="/images/wp-sync/spec-square-oneDNN.png" alt="" class="size-14 block">
+</a>
+<h4 class="lg:text-2xl text-xl font-bold text-left text-neutral-800">
+<a href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/elements/onednn/source/" class="underline text-vibrant-orange">
+oneDNN
+</a>
+</h4>
+</div>
+<hr class="w-full bg-[#BEBABA]">
+<div class="mt-6">
+<p class="text-lg text-[#888C9B] mb-2">
+<strong>oneAPI</strong> Deep Neural Network Library
+</p>
+<p class="text-lg text-neutral-800">
+High performance implementations of primitives for deep learning frameworks.
+</p>
+</div>
+</div>
+<div class="md:flex-shrink-0 md:w-[calc(33.34%-1.34rem)] sm:w-[calc(50%-1rem)] sm:my-0 my-10">
+<div class="w-fit mb-6">
+<a class="w-full justify-center flex mb-3 p-0" href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/elements/oneccl/source/">
+<img src="/images/wp-sync/spec-square-oneCCL.png" alt="" class="size-14 block">
+</a>
+<h4 class="lg:text-2xl text-xl font-bold text-left text-neutral-800">
+<a href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/elements/oneccl/source/" class="underline text-vibrant-orange">
+oneCCL
+</a>
+</h4>
+</div>
+<hr class="w-full bg-[#BEBABA]">
+<div class="mt-6">
+<p class="text-lg text-[#888C9B] mb-2">
+<strong>oneAPI</strong> Collective Communications Library
+</p>
+<p class="text-lg text-neutral-800">
+Communication primitives for scaling deep learning frameworks across multiple devices.
+</p>
+</div>
+</div>
+<div class="md:flex-shrink-0 md:w-[calc(33.34%-1.34rem)] sm:w-[calc(50%-1rem)] sm:my-0 my-10">
+<div class="w-fit mb-6">
+<a class="w-full justify-center flex mb-3 p-0" href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/elements/onedal/source/">
+<img src="/images/wp-sync/spec-square-oneDAL.png" alt="" class="size-14 block">
+</a>
+<h4 class="lg:text-2xl text-xl font-bold text-left text-neutral-800">
+<a href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/elements/onedal/source/" class="underline text-vibrant-orange">
+oneDAL
+</a>
+</h4>
+</div>
+<hr class="w-full bg-[#BEBABA]">
+<div class="mt-6">
+<p class="text-lg text-[#888C9B] mb-2">
+<strong>oneAPI</strong> Data Analytics Library
+</p>
+<p class="text-lg text-neutral-800">
+Algorithms for accelerated data science.
+</p>
+</div>
+</div>
+<div class="md:flex-shrink-0 md:w-[calc(33.34%-1.34rem)] sm:w-[calc(50%-1rem)] sm:my-0 my-10">
+<div class="w-fit mb-6">
+<a class="w-full justify-center flex mb-3 p-0" href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/elements/onetbb/source/nested-index">
+<img src="/images/wp-sync/spec-square-oneTBB.png" alt="" class="size-14 block">
+</a>
+<h4 class="lg:text-2xl text-xl font-bold text-left text-neutral-800">
+<a href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/elements/onetbb/source/nested-index" class="underline text-vibrant-orange">
+oneTBB
+</a>
+</h4>
+</div>
+<hr class="w-full bg-[#BEBABA]">
+<div class="mt-6">
+<p class="text-lg text-[#888C9B] mb-2">
+<strong>oneAPI</strong> Threading Building Blocks
+</p>
+<p class="text-lg text-neutral-800">
+Library for adding thread-based parallelism to complex applications on multiprocessors.
+</p>
+</div>
+</div>
+<div class="md:flex-shrink-0 md:w-[calc(33.34%-1.34rem)] sm:w-[calc(50%-1rem)] sm:my-0 my-10">
+<div class="w-fit mb-6">
+<a class="w-full justify-center flex mb-3 p-0" href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/v1.4-rev-1/elements/onemath/source/#onemath-section">
+<img src="/images/wp-sync/spec-square-oneMKL.png" alt="" class="size-14 block">
+</a>
+<h4 class="lg:text-2xl text-xl font-bold text-left text-neutral-800">
+<a href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/v1.4-rev-1/elements/onemath/source/#onemath-section" class="underline text-vibrant-orange">
+oneMath
+</a>
+</h4>
+</div>
+<hr class="w-full bg-[#BEBABA]">
+<div class="mt-6">
+<p class="text-lg text-[#888C9B] mb-2">
+<strong>oneAPI</strong> Math Kernel Library
+</p>
+<p class="text-lg text-neutral-800">
+High performance math routines for science, engineering, and financial applications.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="uxl-slider mb-6" data-generator="uxl-slider">
+<div class="waves">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40.699">
+<path id="wavesNegative" d="M257.208,32.966C352,25.805,451.464,11.711,547.392,5.933,646.1-.028,749.064.319,847.932,6.067c69.408,4.032,136.8,10.681,206.4,14.39,129.332,6.815,262.709,3.357,385.668-10v31.85H0V33.987C81.372,41.935,173.148,39.319,257.208,32.966Z" transform="translate(1440 42.306) rotate(180)" fill="#fff"/>
+</svg>
+</div>
+<div class="tw-container p-0">
+<h2 class="text-white text-center font-semibold mb-4 text-3xl">Hear more from the Steering Members</h2>
+<div class="uxl-slick-slider">
+<div class="slide">
+<div class="slide-int uxl">
+<div class="testimonial-content container">
+<div class="quote-mark">
+<svg xmlns="http://www.w3.org/2000/svg" width="0.5839in" height="0.4628in" class="mx-auto" viewBox="0 0 42.042 33.3193">
+<g style="isolation: isolate">
+<g style="isolation: isolate">
+<path d="M17.542,18.8154a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1161,9.1161,0,0,1-2.646,6.8106,9.2463,9.2463,0,0,1-6.7622,2.5966,9.3238,9.3238,0,0,1-6.8111-2.6455A9.0649,9.0649,0,0,1,0,23.9121a16.068,16.068,0,0,1,.49-3.92,44.04,44.04,0,0,1,2.1563-5.88L8.33,0h9.7016L13.72,15.582A8.465,8.465,0,0,1,17.542,18.8154Zm23.1279,0a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1153,9.1153,0,0,1-2.6455,6.8106,9.2483,9.2483,0,0,1-6.7627,2.5966,9.3262,9.3262,0,0,1-6.8115-2.6455,9.0661,9.0661,0,0,1-2.6944-6.7617,16.04,16.04,0,0,1,.49-3.92,44.0549,44.0549,0,0,1,2.1552-5.88L31.458,0H41.16L36.8477,15.582A8.4652,8.4652,0,0,1,40.67,18.8154Z" style="fill: white"/>
+</g>
+</g>
+</svg>
+</div>
+<div class="mb-2 font-light text-xl wysiwyg">
+<p class="long">“The foundation members aspire to build the largest open ecosystem for accelerated computing. The initial contributions to the foundation will bring an existing open standards based platform with open governance. Our ultimate aim is to foster a multi-architecture and multi-vendor programming platform for all accelerators”, said <strong>Rod Burns, VP Ecosystem, Codeplay Software and UXL Foundation Steering Committee Chair.</strong></p>
+<p class="long"><a href="https://www.oneapi.io/blog/announcing-the-unified-acceleration-uxl-foundation" target="_blank" rel="noopener">Read More from Rod Burns, VP Ecosystem, Codeplay Software and UXL Foundation Steering Committee Chair</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="slide-int uxl">
+<div class="testimonial-content container">
+<div class="quote-mark">
+<svg xmlns="http://www.w3.org/2000/svg" width="0.5839in" height="0.4628in" class="mx-auto" viewBox="0 0 42.042 33.3193">
+<g style="isolation: isolate">
+<g style="isolation: isolate">
+<path d="M17.542,18.8154a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1161,9.1161,0,0,1-2.646,6.8106,9.2463,9.2463,0,0,1-6.7622,2.5966,9.3238,9.3238,0,0,1-6.8111-2.6455A9.0649,9.0649,0,0,1,0,23.9121a16.068,16.068,0,0,1,.49-3.92,44.04,44.04,0,0,1,2.1563-5.88L8.33,0h9.7016L13.72,15.582A8.465,8.465,0,0,1,17.542,18.8154Zm23.1279,0a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1153,9.1153,0,0,1-2.6455,6.8106,9.2483,9.2483,0,0,1-6.7627,2.5966,9.3262,9.3262,0,0,1-6.8115-2.6455,9.0661,9.0661,0,0,1-2.6944-6.7617,16.04,16.04,0,0,1,.49-3.92,44.0549,44.0549,0,0,1,2.1552-5.88L31.458,0H41.16L36.8477,15.582A8.4652,8.4652,0,0,1,40.67,18.8154Z" style="fill: white"/>
+</g>
+</g>
+</svg>
+</div>
+<div class="mb-2 font-light text-xl wysiwyg">
+<p>“The future of human centric, sustainable digital transformation needs a holistic approach to technology development and open collaboration with the international community. The Unified Acceleration Foundation&#8217;s innovative strategy of building a unified development ecosystem will play a vital role in advancing the creation of cross-platform software and accelerators”, said <strong>Hirai Kouichi, Head of Software Development Division under the Advanced Technology Development Unit, Fujitsu.</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="slide-int uxl">
+<div class="testimonial-content container">
+<div class="quote-mark">
+<svg xmlns="http://www.w3.org/2000/svg" width="0.5839in" height="0.4628in" class="mx-auto" viewBox="0 0 42.042 33.3193">
+<g style="isolation: isolate">
+<g style="isolation: isolate">
+<path d="M17.542,18.8154a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1161,9.1161,0,0,1-2.646,6.8106,9.2463,9.2463,0,0,1-6.7622,2.5966,9.3238,9.3238,0,0,1-6.8111-2.6455A9.0649,9.0649,0,0,1,0,23.9121a16.068,16.068,0,0,1,.49-3.92,44.04,44.04,0,0,1,2.1563-5.88L8.33,0h9.7016L13.72,15.582A8.465,8.465,0,0,1,17.542,18.8154Zm23.1279,0a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1153,9.1153,0,0,1-2.6455,6.8106,9.2483,9.2483,0,0,1-6.7627,2.5966,9.3262,9.3262,0,0,1-6.8115-2.6455,9.0661,9.0661,0,0,1-2.6944-6.7617,16.04,16.04,0,0,1,.49-3.92,44.0549,44.0549,0,0,1,2.1552-5.88L31.458,0H41.16L36.8477,15.582A8.4652,8.4652,0,0,1,40.67,18.8154Z" style="fill: white"/>
+</g>
+</g>
+</svg>
+</div>
+<div class="mb-2 font-light text-xl wysiwyg">
+<p>“The growing diversity of accelerators presents a tremendous opportunity for the industry but can also introduce challenges. Consistent programming models help developers write code that can run efficiently on any accelerator, fostering innovation and choice,” said <strong>George Elissaios, Sr. Director, HPC and ML infrastructure at Google Cloud.</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="slide-int uxl">
+<div class="testimonial-content container">
+<div class="quote-mark">
+<svg xmlns="http://www.w3.org/2000/svg" width="0.5839in" height="0.4628in" class="mx-auto" viewBox="0 0 42.042 33.3193">
+<g style="isolation: isolate">
+<g style="isolation: isolate">
+<path d="M17.542,18.8154a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1161,9.1161,0,0,1-2.646,6.8106,9.2463,9.2463,0,0,1-6.7622,2.5966,9.3238,9.3238,0,0,1-6.8111-2.6455A9.0649,9.0649,0,0,1,0,23.9121a16.068,16.068,0,0,1,.49-3.92,44.04,44.04,0,0,1,2.1563-5.88L8.33,0h9.7016L13.72,15.582A8.465,8.465,0,0,1,17.542,18.8154Zm23.1279,0a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1153,9.1153,0,0,1-2.6455,6.8106,9.2483,9.2483,0,0,1-6.7627,2.5966,9.3262,9.3262,0,0,1-6.8115-2.6455,9.0661,9.0661,0,0,1-2.6944-6.7617,16.04,16.04,0,0,1,.49-3.92,44.0549,44.0549,0,0,1,2.1552-5.88L31.458,0H41.16L36.8477,15.582A8.4652,8.4652,0,0,1,40.67,18.8154Z" style="fill: white"/>
+</g>
+</g>
+</svg>
+</div>
+<div class="mb-2 font-light text-xl wysiwyg">
+<p>“The technology that is improving our day-to-day experiences of driving, entertainment, healthcare and more, is increasingly data-intensive and complex. A new open and collaborative approach to computing is required to provide the necessary acceleration in an efficient and performant manner, whether in the cloud or at the edge,” said <strong>Shreyas Derashri, Vice President of Compute Product Management at Imagination Technologies.</strong> “As a founding member of the Unified Acceleration Foundation, Imagination Technologies will help unite the technology ecosystem around the oneAPI spec and encourage its widespread adoption for software acceleration.”</p>
+</div>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="slide-int uxl">
+<div class="testimonial-content container">
+<div class="quote-mark">
+<svg xmlns="http://www.w3.org/2000/svg" width="0.5839in" height="0.4628in" class="mx-auto" viewBox="0 0 42.042 33.3193">
+<g style="isolation: isolate">
+<g style="isolation: isolate">
+<path d="M17.542,18.8154a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1161,9.1161,0,0,1-2.646,6.8106,9.2463,9.2463,0,0,1-6.7622,2.5966,9.3238,9.3238,0,0,1-6.8111-2.6455A9.0649,9.0649,0,0,1,0,23.9121a16.068,16.068,0,0,1,.49-3.92,44.04,44.04,0,0,1,2.1563-5.88L8.33,0h9.7016L13.72,15.582A8.465,8.465,0,0,1,17.542,18.8154Zm23.1279,0a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1153,9.1153,0,0,1-2.6455,6.8106,9.2483,9.2483,0,0,1-6.7627,2.5966,9.3262,9.3262,0,0,1-6.8115-2.6455,9.0661,9.0661,0,0,1-2.6944-6.7617,16.04,16.04,0,0,1,.49-3.92,44.0549,44.0549,0,0,1,2.1552-5.88L31.458,0H41.16L36.8477,15.582A8.4652,8.4652,0,0,1,40.67,18.8154Z" style="fill: white"/>
+</g>
+</g>
+</svg>
+</div>
+<div class="mb-2 font-light text-xl wysiwyg">
+<p>“As a new independent entity, the Unified Acceleration Foundation will help build an open source programming model across a wide range of architectures and vendors,” said <strong>Vinesh Sukumar, Senior Director of Product Management, Qualcomm Technologies, Inc.</strong> “This helps to address a critical need in the industry for flexible and open source alternatives that will enable a broad range of unique needs.”</p>
+</div>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="slide-int uxl">
+<div class="testimonial-content container">
+<div class="quote-mark">
+<svg xmlns="http://www.w3.org/2000/svg" width="0.5839in" height="0.4628in" class="mx-auto" viewBox="0 0 42.042 33.3193">
+<g style="isolation: isolate">
+<g style="isolation: isolate">
+<path d="M17.542,18.8154a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1161,9.1161,0,0,1-2.646,6.8106,9.2463,9.2463,0,0,1-6.7622,2.5966,9.3238,9.3238,0,0,1-6.8111-2.6455A9.0649,9.0649,0,0,1,0,23.9121a16.068,16.068,0,0,1,.49-3.92,44.04,44.04,0,0,1,2.1563-5.88L8.33,0h9.7016L13.72,15.582A8.465,8.465,0,0,1,17.542,18.8154Zm23.1279,0a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1153,9.1153,0,0,1-2.6455,6.8106,9.2483,9.2483,0,0,1-6.7627,2.5966,9.3262,9.3262,0,0,1-6.8115-2.6455,9.0661,9.0661,0,0,1-2.6944-6.7617,16.04,16.04,0,0,1,.49-3.92,44.0549,44.0549,0,0,1,2.1552-5.88L31.458,0H41.16L36.8477,15.582A8.4652,8.4652,0,0,1,40.67,18.8154Z" style="fill: white"/>
+</g>
+</g>
+</svg>
+</div>
+<div class="mb-2 font-light text-xl wysiwyg">
+<p>“Samsung is pleased to be part of the Unified Acceleration Foundation, which will help expand the basis and adoption for memory coupled computing technologies, such as PIM and PNM”, said <strong>Seungwon Lee, Master and lead of computing software team at Samsung Advanced Institute of technology(SAIT).</strong> “We expect the open collaboration will also bolster programming models and software stacks to effectively accelerate AI/HPC applications in future datacenter and supercomputing systems.”</p>
+</div>
+</div>
+</div>
+</div>
+<div class="slide">
+<div class="slide-int uxl">
+<div class="testimonial-content container">
+<div class="quote-mark">
+<svg xmlns="http://www.w3.org/2000/svg" width="0.5839in" height="0.4628in" class="mx-auto" viewBox="0 0 42.042 33.3193">
+<g style="isolation: isolate">
+<g style="isolation: isolate">
+<path d="M17.542,18.8154a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1161,9.1161,0,0,1-2.646,6.8106,9.2463,9.2463,0,0,1-6.7622,2.5966,9.3238,9.3238,0,0,1-6.8111-2.6455A9.0649,9.0649,0,0,1,0,23.9121a16.068,16.068,0,0,1,.49-3.92,44.04,44.04,0,0,1,2.1563-5.88L8.33,0h9.7016L13.72,15.582A8.465,8.465,0,0,1,17.542,18.8154Zm23.1279,0a9.2984,9.2984,0,0,1,1.3721,5.0967,9.1153,9.1153,0,0,1-2.6455,6.8106,9.2483,9.2483,0,0,1-6.7627,2.5966,9.3262,9.3262,0,0,1-6.8115-2.6455,9.0661,9.0661,0,0,1-2.6944-6.7617,16.04,16.04,0,0,1,.49-3.92,44.0549,44.0549,0,0,1,2.1552-5.88L31.458,0H41.16L36.8477,15.582A8.4652,8.4652,0,0,1,40.67,18.8154Z" style="fill: white"/>
+</g>
+</g>
+</svg>
+</div>
+<div class="mb-2 font-light text-xl wysiwyg">
+<p>“Linux and GNU transformed the CPU software stack through open source and standards, encompassing everything from embedded to cloud computing. As a founding member of the Unified Acceleration Foundation, I believe that open source and standards are essential for creating a cross platform software stack for GPU’s and other accelerators that will serve as the foundation for the next generation of computationally and data-intensive applications”, said <strong>Robert Cohn, Intel Corporation, oneAPI Specification Editor.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="waves-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40.699">
+<path id="wavesNegative" d="M257.208,32.966C352,25.805,451.464,11.711,547.392,5.933,646.1-.028,749.064.319,847.932,6.067c69.408,4.032,136.8,10.681,206.4,14.39,129.332,6.815,262.709,3.357,385.668-10v31.85H0V33.987C81.372,41.935,173.148,39.319,257.208,32.966Z" transform="translate(0 -1.607)" fill="#fff"/>
+</svg>
+</div>
+</section>
+<script>
+jQuery(function(){
+        jQuery('.uxl-slick-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 2000,
+            arrows: true,
+            dots: true,
+            focusOnSelect: false,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 1320,
+                    settings: {
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false
+                    }
+                }
+            ]
+        })
+    })
+</script>
+<section class="max-w-full bg-white" data-generator="uxl-spec-items">
+<div class="tw-container py-6">
+<div class="mb-6 text-lg">
+<p>The Unified Acceleration Foundation is an evolution of the <a href="https://oneapi.io" target="_blank" rel="noopener">oneAPI initiative</a> and focuses on the development of a <strong>specification and open source projects through Working Groups and <a href="https://github.com/uxlfoundation/foundation#special-interest-groups-sigs" target="_blank" rel="nofollow noopener">Special Interest Groups (SIGs)</a></strong>.</p>
+</div>
+<div class="gap-6 mb-12 grid grid-cols-1 lg:grid-cols-2">
+<div class="rounded-[10px] shadow-[0_0_6px_rgba(0,0,0,.3)] px-3 py-6 columns-2 flex flex-col justify-between">
+<div>
+<h3 class="text-[1.5rem] mb-4">
+<a href="https://oneapi.io/spec/" target="_blank" class="underline">
+Specification
+</a>
+</h3>
+<div class="mb-4 text-lg">
+<p>The specification includes 6 core elements of oneAPI, developed by a core team with feedback from the community.</p>
+</div>
+</div>
+<ul class="flex items-center gap-2 list-none p-0 m-0">
+<li class="mb-0 p-0">
+<a class="visited:text-white text-white bg-[#ff5050] border border-transparent hover:bg-white hover:border-[#ff5050] rounded-[10px] block text-base mx-auto my-3 p-2 text-center no-underline w-auto" href="https://oneapi-spec.uxlfoundation.org/specifications/oneapi/latest/" target="_blank">Latest Version</a>
+</li>
+<li class="mb-0 p-0">
+<a class="visited:text-white text-white bg-[#ff5050] border border-transparent hover:bg-white hover:border-[#ff5050] rounded-[10px] block text-base mx-auto my-3 p-2 text-center no-underline w-auto" href="https://github.com/oneapi-src/oneapi-spec" target="_blank">Latest Build on GitHub</a>
+</li>
+</ul>
+</div>
+<div class="rounded-[10px] shadow-[0_0_6px_rgba(0,0,0,.3)] px-3 py-6 columns-2 flex flex-col justify-between">
+<div>
+<h3 class="text-[1.5rem] mb-4">
+<a href="https://oneapi.io/open-source/" target="_blank" class="underline">
+Open Source
+</a>
+</h3>
+<div class="mb-4 text-lg">
+<p>oneAPI allows developers to make accelerator choices.</p>
+</div>
+</div>
+<ul class="flex items-center gap-2 list-none p-0 m-0">
+<li class="mb-0 p-0">
+<a class="visited:text-white text-white bg-[#ff5050] border border-transparent hover:bg-white hover:border-[#ff5050] rounded-[10px] block text-base mx-auto my-3 p-2 text-center no-underline w-auto" href="https://www.oneapi.io/resources/implementations/" target="_blank">Implementations</a>
+</li>
+<li class="mb-0 p-0">
+<a class="visited:text-white text-white bg-[#ff5050] border border-transparent hover:bg-white hover:border-[#ff5050] rounded-[10px] block text-base mx-auto my-3 p-2 text-center no-underline w-auto" href="https://github.com/oneapi-src" target="_blank">oneAPI projects on GitHub</a>
+</li>
+</ul>
+</div>
+<div class="rounded-[10px] shadow-[0_0_6px_rgba(0,0,0,.3)] px-3 py-6 columns-2 flex flex-col justify-between">
+<div>
+<h3 class="text-[1.5rem] mb-4">
+<a href="https://github.com/uxlfoundation/foundation" target="_blank" class="underline">
+Community
+</a>
+</h3>
+<div class="mb-4 text-lg">
+<p>We invite radical collaboration from across the ecosystem to create a shared industry spec.</p>
+</div>
+</div>
+<ul class="flex items-center gap-2 list-none p-0 m-0">
+<li class="mb-0 p-0">
+<a class="visited:text-white text-white bg-[#ff5050] border border-transparent hover:bg-white hover:border-[#ff5050] rounded-[10px] block text-base mx-auto my-3 p-2 text-center no-underline w-auto" href="https://www.oneapi.io/community/how-to-contribute/" target="_blank">Participate</a>
+</li>
+</ul>
+</div>
+<div class="rounded-[10px] shadow-[0_0_6px_rgba(0,0,0,.3)] px-3 py-6 columns-2 flex flex-col justify-between">
+<div>
+<h3 class="text-[1.5rem] mb-4">
+And much more...
+</h3>
+<div class="mb-4 text-lg">
+<ul>
+<li>Check out oneAPI <a href="https://oneapi.io/events/" target="_blank" rel="noopener">events</a>, <a href="https://oneapi.io/news/" target="_blank" rel="noopener">news</a>, and <a href="https://oneapi.io/blog/" target="_blank" rel="noopener">blog</a>.</li>
+<li>Join our community on <a href="https://www.linkedin.com/groups/14241252/" target="_blank" rel="noopener">LinkedIn</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="jump-link-container" aria-hidden="true">
+<div class="jump-link" id="newsletter" style="top: 0px;"></div>
+</div>
+<section class="bg-[#f4f4f4]" data-generator="newsletter-form">
+<div class="container center">
+<h3 class="mb-4 font-semibold">Stay connected with the UXL Foundation!</h3>
+<p>We send occasional news about the UXL Foundation and oneAPI technical progress, events, community discussions and projects.</p>
+<div class="max-w-sm mx-auto mt-8 text-gray-900" id="form-subscribe">
+<script charset="utf-8" src="https://js.hsforms.net/forms/embed/v2.js" type="text/javascript"></script>
+<script>
+hbspt.forms.create({
+                    region: "na1",
+                    portalId: "8112310",
+                    formId: "70e3fb5c-faca-4fc9-894b-c30cb8b94381",
+                    onFormSubmitted: function () {
+                        document.getElementById("form-thank-you").classList.remove("hidden");
+                        document.getElementById("form-subscribe").classList.add("hidden");
+                    }
+                });
+</script>
+</div>
+<div class="hidden" id="form-thank-you">
+<p class="mt-8 font-semibold font-lg">Thank you for subscribing!</p>
+</div>
+</div>
+</section>
+<footer class="site-footer-uxl" data-generator="footer">
+<div class="container center">
+<img alt="UXL Foundation: Unified Acceleration" height="70" src="/images/uxl-color.svg" width="200" class="inline">
+<p class="spacing-1u"><a href="https://uxlfoundation.org">UXLFoundation.org</a></p>
+<ul class="social-links">
+<li><a href="https://www.linkedin.com/groups/14241252/" target="_blank" class="uxl-socialicon spacing-1u"><img src="/images/liuxlblue.png" alt="UXL on LinkedIn" height="36" width="36"></a></li>
+<li><a href="https://twitter.com/UXLfoundation" target="_blank" class="uxl-socialicon spacing-1u"><img src="/images/x-uxlblue.png" alt="UXL on Twitter" height="36" width="36"></a></li>
+<li><a href="https://github.com/uxlfoundation" target="_blank" class="uxl-socialicon spacing-1u"><img src="/images/ghuxlblue.png" alt="UXL on GitHub" height="36" width="36"></a></li>
+<li><a href="https://www.youtube.com/@UXLFoundation" target="_blank" class="uxl-socialicon spacing-1u"><img src="/images/yt-uxlblue.png" alt="UXL on YouTube" height="36" width="36"></a></li>
+</ul>
+<p>Copyright &copy; 2025 Unified Acceleration Foundation. All rights reserved.</p>
+<p>Unified Acceleration Foundation is a <a href="https://jointdevelopment.org/">Joint Development Foundation Project</a></p>
+<p><a href="https://jointdevelopment.org/policies/terms/">Privacy Policy and Terms of Use</a></p>
+</div>
+</footer>
+<div id="global-nag">
+<span class="close-x">&times;</span>
+<h4><div style="line-height:1;"><img style="margin-bottom:0.5rem;" src="https://oneapi.io/wp-content/uploads/2024/09/uxl-foundation-logo-horizontal-color.png"><span style="margin: 0;font-size: 16px;font-weight: 700">Join us at the oneAPI DevSummit Hosted by UXL Foundation<br>September 17, 2025</span></div></h4>
+<a href="https://www.youtube.com/playlist?list=PL1y7wPjc4JtEfgZg1Z4h04Vxck7c6S8tQ" target="_blank" class="button white">
+Watch Replay
+</a>
+</div>
+</div>
+</main>
+</body>
+</html>
